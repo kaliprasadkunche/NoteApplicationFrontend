@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App {
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  .Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 5px light #ddd;
+  }
+  
+  .Header h1 {
+    margin: 0;
+  }
+  
+  .Header .MuiAvatar-root {
+    cursor: pointer;
+  }
+  
+  /* NoteInput Styles */
+  .NoteInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .NoteInput1 {
+    margin-right: 10px;
+  }
+  
+  .NoteInput {
+    margin: 20px 0;
+  }
+
+  .NoteInput1 button:hover {
+    background-color: '#edb92b';
+  }
+
+  .NoteInputbutton:hover {
+    background-color: '#edb92b';
+  }
+  
+  /* AddNoteModal Styles */
+  .AddNoteModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .AddNoteModal-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .AddNoteModal-actions button {
+    margin-left: 10px;
+  }
+  
+  .NoteCard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.4s;
+  }
+  
+  .NoteCard:hover {
+    box-shadow: 2px 2px 2px rgb(232, 220, 89);
+  }
+  
+  .NoteCard-content {
+    padding: 16px;
+  }
+  
+  .NoteCard-title {
+    margin-bottom: 15px;
+  }
+  
+  .NoteCard-body {
+    white-space: pre-line;
+    word-break: break-word;
+  }
+  
+  .NoteCard-timestamp {
+    display: block;
+    margin-top: 8px;
+    color: #555;
+  }
+  
+  .NoteCard-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+  }
+  
+
+  .my-masonry-grid {
+    display: flex;
+    margin-left: -30px;
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 30px;
+    background-clip: padding-box;
+  }
+  
+  .my-masonry-grid_column > div {
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .NoteCard {
+      margin: 10px 0;
+    }
+  }
+  
